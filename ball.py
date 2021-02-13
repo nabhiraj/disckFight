@@ -105,5 +105,7 @@ class Ball:
     def applyBoundryCollision(self):
         if self.isTopLimit() or self.isBottomLimit():
             self.vel_y*=-1
+            self.life-=5
         if self.isRightLimit() or self.isLeftLimit():
             self.vel_x*=-1
+            self.life-=5

@@ -6,7 +6,7 @@ import collisionDtectioni
 import lifeIndicator
 running=True
 pygame.init()
-screen=pygame.display.set_mode([500,500])
+screen=pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 b1=Ball((0,255,0),50,200,200,screen)
 b1.setControl(pygame.K_LEFT,pygame.K_RIGHT,pygame.K_UP,pygame.K_DOWN)
 b2=Ball((0,0,255),50,100,100,screen)
